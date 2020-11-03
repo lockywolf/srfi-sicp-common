@@ -1,9 +1,13 @@
 ;;; -*- mode: scheme; -*-
-;; Time-stamp: <2020-11-03 22:38:54 lockywolf>
+;; Time-stamp: <2020-11-03 23:14:47 lockywolf>
 ;; Title: srfi-? sample implementation.
 ;; Author: lockywolf
 ;; Created: <2020-11-03 Tue>
 
+;;; r4rs booleans
+
+(define true #t) 
+(define false #f) ;; luckily, SICP does not use '() as false
 
 ;;; Random numbers.
 
@@ -39,7 +43,7 @@
 
 (define (test-and-set! cell) ;; srfi-18
   (mutex-lock! central-old-mutex) 
-  (let ((output (if (car cell) #t (begin (set-car! cell true) #f))))
+  (let ((output (if (car cell) #t (begin (set-car! cell #t) #f))))
     (mutex-unlock! central-old-mutex)
     output))
 
