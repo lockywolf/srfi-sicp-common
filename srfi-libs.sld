@@ -1,5 +1,5 @@
 ;; -*- mode: scheme; -*-
-;; Time-stamp: <2020-11-03 16:37:05 lockywolf>
+;; Time-stamp: <2020-11-03 22:39:24 lockywolf>
 ;; Author: lockywof
 ;; Created: <2020-11-03 Tue 16:23>
 ;; Title: r7rs library declarations for srfi-?
@@ -15,7 +15,10 @@
 		display
 		define-syntax
 		syntax-rules
-		delay))
+		delay
+		*
+		-
+		define))
   ;; define-syntax
   ;; syntax-rules
   ;; delay

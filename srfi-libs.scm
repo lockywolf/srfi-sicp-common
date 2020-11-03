@@ -1,19 +1,19 @@
-#!/usr/bin/chibi-scheme
 ;;; -*- mode: scheme; -*-
-;; Time-stamp: <2020-11-03 16:33:02 lockywolf>
+;; Time-stamp: <2020-11-03 22:38:54 lockywolf>
 ;; Title: srfi-? sample implementation.
 ;; Author: lockywolf
 ;; Created: <2020-11-03 Tue>
 
-;;; Timing.
-
-(define (runtime) ;; r7rs
-  (* 1000 (current-second))) 
 
 ;;; Random numbers.
 
 (define (random x) ;; srfi-27
     (random-integer x))
+
+;;; Timing.
+
+(define (runtime) ;; r7rs
+  (* 1000 (current-second)))
 
 ;;; Multi-threading.
 
