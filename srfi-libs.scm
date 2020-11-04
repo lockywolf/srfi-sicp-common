@@ -1,5 +1,5 @@
 ;;; -*- mode: scheme; -*-
-;; Time-stamp: <2020-11-03 23:14:47 lockywolf>
+;; Time-stamp: <2020-11-04 12:11:53 lockywolf>
 ;; Title: srfi-? sample implementation.
 ;; Author: lockywolf
 ;; Created: <2020-11-03 Tue>
@@ -17,7 +17,7 @@
 ;;; Timing.
 
 (define (runtime) ;; r7rs
-  (* 1000 (current-second)))
+  (* 1000 (current-second))) ;; microseconds
 
 ;;; Multi-threading.
 

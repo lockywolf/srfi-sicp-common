@@ -1,5 +1,5 @@
 ;; -*- mode: scheme; -*-
-;; Time-stamp: <2020-11-03 23:39:53 lockywolf>
+;; Time-stamp: <2020-11-04 11:05:56 lockywolf>
 ;; Author: lockywof
 ;; Created: <2020-11-03 Tue 16:23>
 ;; Title: r7rs library declarations for srfi-?
@@ -18,15 +18,15 @@
 		make-mutex
 		mutex-lock!
 		mutex-unlock!))
-  (export runtime
-	  random
-	  parallel-execute
-	  test-and-set!
-	  cons-stream
-	  stream-null?
-	  the-empty-stream
-	  true
-	  false
+  (export runtime ;; function
+	  random ;; function
+	  parallel-execute ;; function
+	  test-and-set! ;; function
+	  cons-stream ;; syntax
+	  stream-null? ;; function
+	  the-empty-stream ;; constant
+	  true ;; constant
+	  false ;; constant
 	  )
 
   (include "srfi-libs.scm"))
